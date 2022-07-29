@@ -1,0 +1,54 @@
+//===================CONTACT=============================
+.contact{
+
+  
+  
+  &__container{
+    padding-bottom: 3rem;
+    @media screen and (min-width:576px) {
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+      padding-bottom: .8rem;
+    }
+
+    
+  }
+
+  &__description{
+    text-align: center;
+
+    @media screen and (min-width:576px) {
+      text-align: initial;
+      
+      
+    }
+  }
+
+  .section__title-center{
+    @media screen and (min-width:576px) {
+      text-align: initial;
+        
+    }
+
+  }
+
+  &__content{
+    row-gap: .75rem;
+    
+    .button{
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__address{
+    font-size: $small-font-size;
+    font-weight: $font-semi-bold;
+    color: $title-color;
+  }
+
+  &__information{
+    font-weight: initial;
+    color: $text-color;
+    
+  }
+}

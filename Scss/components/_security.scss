@@ -1,0 +1,33 @@
+//========================SECURITY=================================
+.security{
+  &__container{
+    gap: 2.5rem;
+
+    @media screen and (min-width:576px) {
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+      
+    }
+
+    @media screen and (min-width:968px) {
+      gap: 6rem;
+      
+    }
+
+
+  }
+  &__description{
+    text-align: center;
+    @media screen and (min-width:576px) {
+      text-align: initial;
+      
+    }
+  }
+
+  .section__title-center{
+    @media screen and (min-width:576px) {
+      text-align: initial;   
+    }
+
+  }
+}

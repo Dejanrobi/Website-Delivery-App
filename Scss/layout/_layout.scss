@@ -1,0 +1,74 @@
+//===============================================================================
+                          //RE-USABLE CSS CLASSES
+//===============================================================================
+
+.section{
+  padding: 4.5rem 0 1rem;
+
+  @media screen and (max-width:360px) {
+    padding: 3.5rem 0 1rem;
+    
+  }
+  @media screen and (min-width:801px) {
+    padding: 6rem 0 2rem;
+    
+  }
+
+  &__title, &__title-center{
+    font-size: $h2-font-size;
+    color: $title-color;
+    text-align: center;
+    margin-bottom: $mb-1
+  }
+
+
+}
+
+.svg{
+  &__color{
+    fill: $first-color;
+  }
+
+  &__blob{
+    fill: $first-color-light;
+  }
+  &__img{
+    width: 300px;
+    justify-self: center;
+
+    @media screen and (max-width:360px)  {
+      max-width: 100%;
+    
+    }
+    @media screen and (min-width:576px)  {
+      width: 100%;
+    
+    }
+
+    @media screen and (min-width:968px) {
+      width: 470px;
+      
+    }
+  }
+
+  
+}
+
+
+//========================================================================
+                            //LAYOUT
+//========================================================================
+.container{
+  max-width: 968px; 
+
+  @media screen and (min-width:969px) {
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+}
+
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}

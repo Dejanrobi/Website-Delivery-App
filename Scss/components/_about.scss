@@ -1,0 +1,47 @@
+//=======================ABOUT==================================
+.about{
+  &__container{
+    gap: 2.5rem;
+
+    @media screen and (min-width:576px) {
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+      
+    }
+
+    @media screen and (min-width:968px) {
+      gap: 6rem;
+      
+    }
+    
+
+  }
+
+
+  &__data{
+    text-align: center;
+    @media screen and (min-width:576px) {
+      text-align: initial;
+      order: 1;
+      
+    }
+  }
+
+  &__description{
+    @media screen and (min-width:576px) {
+     text-align: initial;
+      
+    }
+
+  }
+
+  .section__title-center{
+    @media screen and (min-width:576px) {
+     text-align: initial;
+      
+    }
+
+  }
+
+  
+}

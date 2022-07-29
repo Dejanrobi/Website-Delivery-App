@@ -1,0 +1,121 @@
+//=================================================================
+                        //HEADER
+//=================================================================
+.header{
+  width: 100%;
+  background-color: $body-color;
+  position: fixed;
+  top: 0;
+  padding-left: 20px;
+  padding-right: 20px; 
+  z-index: $z-fixed;
+  transition: .5s; //for animation dark mode
+}
+
+//===============================================================
+                      //NAV
+//===============================================================
+.nav{
+  height: $header-height;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width:801px) {
+    height: calc(($header-height) + 1.5rem);
+  }
+
+  &__menu{
+    @media screen and (max-width:767px){
+      position: fixed;
+      //background-color: $container-color;
+      box-shadow: 0 0 4px rgba(0,0,0,.1);
+      padding: 2.5rem 0;
+      width: 90%;
+      top: -100%; //to remove it from being displayed
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      transition: .4s;
+      border-radius: 1rem;
+      z-index: $z-fixed;
+      
+    }
+
+    @media screen and (min-width:801px) {
+      background-color: rgba(255, 255, 255, 0);
+    }
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem ;
+
+    @media screen and (min-width:801px) {
+      flex-direction: row;
+      column-gap: 2.5rem;
+    }
+  }
+
+  
+  &__logo,
+  &__toggle,
+  &__link{
+    color: $title-color;
+    font-weight: $font-semi-bold;
+  }
+
+  &__toggle{
+    font-size: 1.3rem;
+    cursor: pointer;
+
+    @media screen and (min-width:801px) {
+      display: none;
+    }
+  }
+}
+
+.change-theme{
+
+}
+
+//======================================================================
+                        //SHOW THE MENU
+//======================================================================
+
+.show-menu{
+  top: calc(($header-height) + 1rem); //4rem  
+}
+
+
+//=============ACTIVE LINK===============
+.active-link{
+  position: relative;
+  
+  &::before{
+    content: '';
+    position: absolute;
+    bottom: -.75rem;
+    left: 45%;
+    width: 5px;
+    height: 5px;
+    background-color: $title-color;
+    border-radius: 50%;
+  }
+
+}
+
+//=========MAIN====================
+.main{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+//===================CHANGE BACKGROUND HEADER COLOR==============================
+.scroll-header{
+  box-shadow: 0 1px 4px rgba(0,0,0,.1);
+}

@@ -1,0 +1,100 @@
+//====================THEME===========================
+
+//=============Variables Dark Theme ==================
+
+body.dark-theme{
+  $first-color-light: hsl($hue, $sat, 75%);
+  $title-color: hsl($hue, 4%, 95%);
+  $text-color: hsl($hue, 4%, 80%);
+  $body-color: hsl($hue, 8%, 13%);
+  $container-color: hsl($hue, 8%, 16%);
+  $scroll-bar-color: hsl($hue, 4%, 32%);
+  $scroll-thumb-color: hsl($hue, 4%, 24%);
+
+  background-color: $body-color;
+  color: $text-color;
+
+  h1,h2,h3{
+    color: $title-color;
+  }
+
+  .services{
+    &__data{
+      background-color: $container_color;
+    }
+  }
+
+  .button{
+    &-link{
+      color: $title-color;
+    }
+  }
+
+  .contact{
+    &__address{
+      color: $title-color;
+    }
+
+    &__information{
+      color: $text-color;
+    }
+  }
+
+  .header{
+    background-color: $body-color;
+  }
+
+  .nav{
+    &__logo,
+    &__toggle,
+    &__link{
+      color: $title-color;
+    }
+
+    &__menu{
+      background-color: $container-color;
+    }
+
+  }
+
+  #theme-button{
+    color: $title-color;
+  }
+
+  .active-link{
+    &::before{
+      background-color: $title-color;
+    }
+  }
+
+  .footer{
+    background-color: $container-color;
+
+    &__logo, &__social-link{
+      color: $title-color;
+    }
+
+
+    &__link, &__copy{
+      color: $text-color;
+    }
+
+
+  }
+}
+
+
+
+//===============Button Dark/Light====================
+.change-theme{
+  position: absolute;
+  right: 1.5rem;
+  top: 2.2rem;
+  color: $title-color;
+  font-size: 1.8rem;
+  cursor: pointer;
+
+  @media screen and (min-width:801px) {
+      position: initial;
+  }
+}

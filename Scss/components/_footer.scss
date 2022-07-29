@@ -1,0 +1,86 @@
+//========================FOOTER==================================
+.footer{
+  background-color: $first-color-lighten;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-bottom: 2rem;
+
+  &__container{
+    padding-left: 20px;
+    row-gap: 2rem;
+
+    @media screen and (min-width:576px) {
+      grid-template-columns: repeat(2,1fr);
+      padding-bottom: 2rem; 
+    }
+    @media screen and (min-width:968px) {
+      grid-template-columns: repeat(5,1fr);
+      padding-bottom: 2rem; 
+    }
+
+  }
+
+  &__logo,
+  &__title{
+    font-size: $h3-font-size;
+    margin-bottom: $mb-0-75;
+  }
+
+  &__logo{
+    display: inline-block;
+    font-weight: $font-semi-bold;
+    color: $title-color
+  }
+
+  &__description,
+  &__link{
+    font-size: $small-font-size;
+  }
+
+  &__links{
+    display: grid;
+    row-gap: .5rem;
+  }
+
+  &__link{
+    color: $title-color;
+  }
+
+
+  &__social{
+    margin-top: 25px;
+    padding-left: 20px;
+    display: flex;
+    column-gap: 1.5rem;
+
+    &-link{
+      font-size: 1.25rem;
+      color: $title-color;
+
+      @media screen and (min-width:968px) {
+        font-size: 1.45rem;
+      
+      }
+    }
+
+    @media screen and (min-width:576px) {
+      padding-bottom: 1rem;
+      
+    }
+    
+  }
+
+  
+  &__copy{
+    padding-left: 20px;
+    margin-top: 5rem;
+    text-align: center;
+    font-size: $small-font-size;
+    color: $text-color;
+
+    @media screen and (min-width:576px) {
+      margin-top: 2rem;
+      
+    }
+  }
+}

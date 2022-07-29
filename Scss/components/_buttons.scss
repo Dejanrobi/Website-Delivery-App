@@ -1,0 +1,51 @@
+.button{
+  display: inline-block;
+  background-color: $first-color;
+  color: #1a1a1a;
+  padding: .75rem 1.5rem;
+  border-radius: 3rem;
+  font-weight: $font-semi-bold;
+  transition: .3s;
+
+  &:hover{
+    background-color: $first-color-alt;
+  }
+  &__header{
+    display: none;
+
+    @media screen and(min-width:968px) {
+      display: block;
+      
+    }
+  }
+
+  &-link{
+    background: none;
+    padding: 0;
+    color: $title-color;
+    transition: .3s ease;
+
+    &:hover{
+      background-color: transparent;
+      color: $first-color-alt;
+    }
+  }
+
+  &-flex{
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    padding: .75rem 1rem;
+  }
+
+  &__icon{
+    font-size: 1.5rem;
+  }
+}
+
+.app__buttons{
+  @media screen and (max-width:360px) {
+    grid-template-columns: max-content;
+    
+  }
+}
