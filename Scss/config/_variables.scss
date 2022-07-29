@@ -11,8 +11,8 @@ $header-height: 3rem;
                                         //COLORS
 //============================================================================================
 
-$hue: 4;
-$sat: 90%;
+$hue: 45;  //Yellow:45  Red:4   Orange:18  Green: 11
+$sat: 98%;   //Yellow: 98%  Red: 90%  orange: 85%  Green: 5
 $first-color: hsl($hue, $sat, 60%);
 $first-color-light: hsl($hue, $sat, 85%);
 $first-color-lighten: hsl($hue, $sat, 80%);
